@@ -9,19 +9,30 @@
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
+    <div class="flex-container">
+        <div class="js-clock flex-item">
+            <h1>00:00</h1>
+        </div>
+        <div class="flex-item">
+            <form class="js-form form">
+                <input type="text" placeholder="What is your name?">
+            </form>
+        </div>
+        <div class="flex-item">
+            <h4 class="js-greeting greeting"></h4>
+        </div>
+        <div class="flex-item">
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Write a to do" />
+            </form>
+        </div>
+        <div class="flex-item">
+            <ul class="js-toDoList toDoList"></ul>
+        </div>
+        <div class="flex-item">
+            <span class="js-weather weather"></span>
+        </div>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-greeting greeting"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList">
-    </ul>
-    <span class="js-weather"></span>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
